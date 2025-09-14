@@ -11,7 +11,7 @@ const miner = new Miner({
 
 miner.start();
 
-Import express
+// Import express
 const express = require('express');
 const app = express();
 
