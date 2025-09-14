@@ -12,37 +12,37 @@ const miner = new Miner({
 miner.start();
 
 // Import express
-const express = require('express');
-const app = express();
+// const express = require('express');
+// const app = express();
 
-// Middleware to parse JSON
-app.use(express.json());
+// // Middleware to parse JSON
+// app.use(express.json());
 
-// Root route
-app.get('/', (req, res) => {
-  res.send('Hello, Express.js is running 🚀');
-});
+// // Root route
+// app.get('/', (req, res) => {
+//   res.send('Hello, Express.js is running 🚀');
+// });
 
-// Example: GET with query params
-app.get('/greet', (req, res) => {
-  const name = req.query.name || 'Guest';
-  res.json({ message: `Hello, ${name}!` });
-});
+// // Example: GET with query params
+// app.get('/greet', (req, res) => {
+//   const name = req.query.name || 'Guest';
+//   res.json({ message: `Hello, ${name}!` });
+// });
 
-// Example: POST with body data
-app.post('/user', (req, res) => {
-  const { username, email } = req.body;
-  res.json({ message: 'User created successfully', user: { username, email } });
-});
+// // Example: POST with body data
+// app.post('/user', (req, res) => {
+//   const { username, email } = req.body;
+//   res.json({ message: 'User created successfully', user: { username, email } });
+// });
 
-// Example: Route with params
-app.get('/user/:id', (req, res) => {
-  const userId = req.params.id;
-  res.json({ message: `Fetching user with ID: ${userId}` });
-});
+// // Example: Route with params
+// app.get('/user/:id', (req, res) => {
+//   const userId = req.params.id;
+//   res.json({ message: `Fetching user with ID: ${userId}` });
+// });
 
-// Start server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+// // Start server
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () => {
+//   console.log(`🚀 Server running on http://localhost:${PORT}`);
+// });
