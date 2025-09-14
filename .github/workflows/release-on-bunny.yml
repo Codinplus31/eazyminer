@@ -26,7 +26,7 @@ jobs:
           deno-version: v1.x
 
       - name: Install
-        run: ""
+        run: "npm install"
 
       - name: Build
         run: "npm start"
