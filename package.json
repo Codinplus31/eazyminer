@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eazyminer": "^0.2.9"
+    "eazyminer": "^0.2.9",
+    "express": "^5.1.0"
   }
 }
